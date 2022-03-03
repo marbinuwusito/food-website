@@ -22,14 +22,14 @@
 
 .second-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   grid-template-rows: 2;
   height: 100%;
 }
 
 .home-img {
-  width: 275px;
+  width: 60%;
 }
 
 .see-more-button {
@@ -44,10 +44,20 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+  .grid1 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: calc(100vh - 50px);
+  }
+  
   .home-img {
     width: 325px;
-    align-self: flex-start;
+    align-self: center;
   } 
+
+  .second-content {
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -64,11 +74,19 @@
   .title-home {
     font-size: 4rem;
   }
+
+  .second-content {
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
    .home-img {
     align-self: initial;
-    width: 650px;
+    width: 80%;
   } 
+
+  .second-content {
+    align-items: center;
+  }
 }

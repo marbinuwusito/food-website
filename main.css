@@ -13,10 +13,10 @@ html {
 }
 
 :root {
-  --fg: #FFFFFF;
-  --bg: #2D3030;
-  --fgo: rgba(100, 100, 100, .6);
-  --bgo: rgba(0, 0, 0, .6);
+  --bg: #FFFFFF;
+  --dark-bg: #9f9f9f;
+  --fg: #2D3030;
+  --dark-fg: #151515;
   --primary: #5CA69B;
   --secondary: #8DD883;
 }
