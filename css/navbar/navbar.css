@@ -4,6 +4,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1;
+  transition: background-color .4s;
 }
 
 .navbar {
@@ -13,6 +14,7 @@ nav {
   flex-direction: column;
   height: 50px;
   color: var(--fg);
+  transition: background-color .4s, color .4s;
 }
 
 .navbar-container {
@@ -27,14 +29,14 @@ nav {
   position: fixed;
   top: 50px;
   left: 0;
-  right: 0;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 20px 0;
   background-color: var(--dark-bg);
+  transition: background-color .4s;
   width: 100%;
-  transition: left .3s ease-in-out;
+  transition: left .3s cubic-bezier(0.86, 0.28, 0, 0.8);
 }
 
 .d-none {
@@ -49,6 +51,22 @@ nav {
 
 .navbar i {
   font-size: 1.3rem;
+  color: var(--fg);
+  transition: color .4s;
+}
+
+.navbar a {
+  color: var(--fg);
+  text-decoration: none;
+  user-select: none;
+  padding: 2px 8px;
+  transition: color .4s;
+}
+
+.active {
+  background-color: var(--primary);
+  border-radius: 2px;
+  transition: background-color .4s;
 }
 
 @media only screen and (min-width: 992px) {
@@ -68,7 +86,9 @@ nav {
     width: fit-content;
     height: fit-content;
     height: 0px;
+    gap: 40px;
     background-color: var(--bg);
+    transition: background-color .4s;
   }
 
   .navbar-burger {

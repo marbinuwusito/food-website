@@ -1,0 +1,106 @@
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 10vh auto auto auto 10vh;
+  gap: 20px;
+}
+
+.services-title {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.service-1 {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: var(--fg);
+}
+
+.service-2 {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: var(--fg);
+}
+
+.service-3 {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: var(--fg);
+}
+
+.more-services-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+}
+
+.more-services {
+  color: var(--fg);
+  text-decoration: none;
+  border: 2px solid var(--fg);
+  padding: 8px;
+  border-radius: 12px;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh calc( 80vh - 50px) 10vh;
+    gap: 0px;
+  } 
+
+  .service-1 {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-2 {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-3 {
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .service-icon {
+    font-size: 5rem;
+  }
+  .grid3 {
+    gap: 30px;
+    grid-template-rows: 10vh calc( 80vh - 110px) 10vh;
+  }
+}

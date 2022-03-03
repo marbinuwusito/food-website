@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Food Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link href="./main.css" rel="stylesheet">
@@ -26,21 +26,21 @@
             <i class="fa fa-bars" id="bars"></i>
           </div>
           <div class="navbar-items d-none">
-            <p>Home</p>
-            <p>Services</p>
-            <p>About Us</p>
-            <p>Theme</p>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./pages/Services.html">Services</a>
+            <a href="./pages/AboutUs.html">About Us</a>
+            <i class="fa-solid fa-moon" id="theme"></i>
           </div>
         </div>
-     </div>
+      </div>
     </nav>
     <div class="container">
       <div class="grid1">
         <div class="first-content">
           <h1 class="title-home">Fastest Delivery & Easy Pick Up.</h1>
-          <button class="see-more-button">
+          <a class="see-more-button" href="#menu">
             See More
-          </button>
+          </a>
         </div>
         <div class="second-content">
           <img src="./img/home.png" class="home-img">
@@ -52,7 +52,7 @@
         <div class="container">
           <div class="grid2">
             <div class="title-menu">
-              <h2>Menu</h2>
+              <h2 id="menu">Menu</h2>
             </div>
             <div class="row-card">
               <div class="card">

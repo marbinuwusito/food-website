@@ -1,7 +1,16 @@
+/* ====== FONTS ====== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import './css/navbar.css';
-@import './css/section1.css';
-@import './css/section2.css';
+/* ====== HOME ======= */
+@import './css/navbar//navbar.css';
+@import './css/home/section1.css';
+@import './css/home/section2.css';
+
+/* ====== SERVICES ====== */
+@import './css/services/section3.css';
+
+/* ====== ABOUT US ====== */
+
+@import './css/AboutUs/section4.css';
 
 * {
   padding: 0;
@@ -13,12 +22,21 @@ html {
 }
 
 :root {
-  --bg: #FFFFFF;
-  --dark-bg: #9f9f9f;
-  --fg: #2D3030;
-  --dark-fg: #151515;
-  --primary: #5CA69B;
-  --secondary: #8DD883;
+  --bg: #E8E8E9;
+  --fg: #040F0F;
+  --dark-bg: #c6c6c8;
+  --dark-fg: #0b2828;
+  --primary: #289944;
+  --secondary: #0E3013;
+}
+
+.dark {
+  --bg: #040F0F;
+  --fg: #E8E8E9;
+  --dark-bg: #0b2828;
+  --dark-fg: #c6c6c8;
+  --primary: #289944;
+  --secondary: #1d6327; 
 }
 
 body {
@@ -28,6 +46,7 @@ body {
 .background {
   background-color: var(--bg);
   height: auto;
+  transition: background-color .4s;
 }
 
 .container {
