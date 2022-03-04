@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
+.light {
   --bg: #E8E8E9;
   --fg: #040F0F;
   --dark-bg: #c6c6c8;

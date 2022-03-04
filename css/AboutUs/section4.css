@@ -3,6 +3,13 @@
   border-radius: 12px;
 }
 
+.background-about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid4 {
   display: grid;
   grid-template-columns: 1fr;
@@ -11,6 +18,7 @@
 
 .about-us-title {
   margin: 20px 0;
+  color: var(--fg);
 }
 
 .about-us-card-title {
@@ -45,6 +53,7 @@
   grid-template-rows: auto;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+  gap: 20px;
 }
 
 .data-icon-sub-title {
@@ -52,4 +61,54 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  color: var(--fg);
+}
+
+.number {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us-card {
+    background-color: var(--primary);
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .grid4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .about-us-card-title {
+    grid-column: 1 / 2;
+  }
+
+  
+  .about-us-img-container {
+    grid-column: 1 / 2;
+  }
+
+  .data {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-us-card {
+    width: 80%;
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+   .about-us-card {
+    width: 50%;
+  } 
 }
