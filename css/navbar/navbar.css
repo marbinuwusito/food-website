@@ -52,6 +52,7 @@ nav {
   font-size: 1.3rem;
   color: var(--fg);
   transition: color .4s;
+  cursor: pointer;
 }
 
 .navbar a {
